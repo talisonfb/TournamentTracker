@@ -6,5 +6,10 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
+
+        private void unplayedOnlyCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
