@@ -39,7 +39,7 @@
             this.teamOneScoreLabel = new System.Windows.Forms.Label();
             this.teamOneScoreValue = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.teamTwoScoreLabel = new System.Windows.Forms.Label();
             this.teamTwoName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -144,16 +144,16 @@
             this.textBox1.Size = new System.Drawing.Size(125, 43);
             this.textBox1.TabIndex = 11;
             // 
-            // label1
+            // teamTwoScoreLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(550, 415);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 45);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Score";
+            this.teamTwoScoreLabel.AutoSize = true;
+            this.teamTwoScoreLabel.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamTwoScoreLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.teamTwoScoreLabel.Location = new System.Drawing.Point(550, 415);
+            this.teamTwoScoreLabel.Name = "teamTwoScoreLabel";
+            this.teamTwoScoreLabel.Size = new System.Drawing.Size(100, 45);
+            this.teamTwoScoreLabel.TabIndex = 10;
+            this.teamTwoScoreLabel.Text = "Score";
             // 
             // teamTwoName
             // 
@@ -173,7 +173,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(862, 599);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.teamTwoScoreLabel);
             this.Controls.Add(this.teamTwoName);
             this.Controls.Add(this.teamOneScoreValue);
             this.Controls.Add(this.teamOneScoreLabel);
@@ -206,7 +206,7 @@
         private Label teamOneScoreLabel;
         private TextBox teamOneScoreValue;
         private TextBox textBox1;
-        private Label label1;
+        private Label teamTwoScoreLabel;
         private Label teamTwoName;
     }
 }
