@@ -34,6 +34,13 @@
             this.roundLabel = new System.Windows.Forms.Label();
             this.roundDropDown = new System.Windows.Forms.ComboBox();
             this.unplayedOnlyCheckbox = new System.Windows.Forms.CheckBox();
+            this.matchupListBox = new System.Windows.Forms.ListBox();
+            this.teamOneName = new System.Windows.Forms.Label();
+            this.teamOneScoreLabel = new System.Windows.Forms.Label();
+            this.teamOneScoreValue = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headerLabel
@@ -91,12 +98,87 @@
             this.unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
             this.unplayedOnlyCheckbox.CheckedChanged += new System.EventHandler(this.unplayedOnlyCheckbox_CheckedChanged);
             // 
+            // matchupListBox
+            // 
+            this.matchupListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.matchupListBox.FormattingEnabled = true;
+            this.matchupListBox.ItemHeight = 37;
+            this.matchupListBox.Location = new System.Drawing.Point(39, 216);
+            this.matchupListBox.Name = "matchupListBox";
+            this.matchupListBox.Size = new System.Drawing.Size(433, 298);
+            this.matchupListBox.TabIndex = 5;
+            // 
+            // teamOneName
+            // 
+            this.teamOneName.AutoSize = true;
+            this.teamOneName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamOneName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.teamOneName.Location = new System.Drawing.Point(550, 216);
+            this.teamOneName.Name = "teamOneName";
+            this.teamOneName.Size = new System.Drawing.Size(203, 45);
+            this.teamOneName.TabIndex = 6;
+            this.teamOneName.Text = "<team one>";
+            // 
+            // teamOneScoreLabel
+            // 
+            this.teamOneScoreLabel.AutoSize = true;
+            this.teamOneScoreLabel.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamOneScoreLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.teamOneScoreLabel.Location = new System.Drawing.Point(550, 277);
+            this.teamOneScoreLabel.Name = "teamOneScoreLabel";
+            this.teamOneScoreLabel.Size = new System.Drawing.Size(100, 45);
+            this.teamOneScoreLabel.TabIndex = 7;
+            this.teamOneScoreLabel.Text = "Score";
+            // 
+            // teamOneScoreValue
+            // 
+            this.teamOneScoreValue.Location = new System.Drawing.Point(656, 280);
+            this.teamOneScoreValue.Name = "teamOneScoreValue";
+            this.teamOneScoreValue.Size = new System.Drawing.Size(125, 43);
+            this.teamOneScoreValue.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(656, 418);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 43);
+            this.textBox1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Location = new System.Drawing.Point(550, 415);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 45);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Score";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label2.Location = new System.Drawing.Point(550, 354);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 45);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "<team one>";
+            // 
             // TournamentViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(662, 597);
+            this.ClientSize = new System.Drawing.Size(862, 599);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.teamOneScoreValue);
+            this.Controls.Add(this.teamOneScoreLabel);
+            this.Controls.Add(this.teamOneName);
+            this.Controls.Add(this.matchupListBox);
             this.Controls.Add(this.unplayedOnlyCheckbox);
             this.Controls.Add(this.roundDropDown);
             this.Controls.Add(this.roundLabel);
@@ -119,5 +201,12 @@
         private Label roundLabel;
         private ComboBox roundDropDown;
         private CheckBox unplayedOnlyCheckbox;
+        private ListBox matchupListBox;
+        private Label teamOneName;
+        private Label teamOneScoreLabel;
+        private TextBox teamOneScoreValue;
+        private TextBox textBox1;
+        private Label label1;
+        private Label label2;
     }
 }
