@@ -38,7 +38,7 @@
             this.teamOneName = new System.Windows.Forms.Label();
             this.teamOneScoreLabel = new System.Windows.Forms.Label();
             this.teamOneScoreValue = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.teamTwoScoreText = new System.Windows.Forms.TextBox();
             this.teamTwoScoreLabel = new System.Windows.Forms.Label();
             this.teamTwoName = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -137,12 +137,12 @@
             this.teamOneScoreValue.Size = new System.Drawing.Size(125, 43);
             this.teamOneScoreValue.TabIndex = 8;
             // 
-            // textBox1
+            // teamTwoScoreText
             // 
-            this.textBox1.Location = new System.Drawing.Point(656, 418);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 43);
-            this.textBox1.TabIndex = 11;
+            this.teamTwoScoreText.Location = new System.Drawing.Point(656, 418);
+            this.teamTwoScoreText.Name = "teamTwoScoreText";
+            this.teamTwoScoreText.Size = new System.Drawing.Size(125, 43);
+            this.teamTwoScoreText.TabIndex = 11;
             // 
             // teamTwoScoreLabel
             // 
@@ -162,9 +162,9 @@
             this.teamTwoName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.teamTwoName.Location = new System.Drawing.Point(550, 354);
             this.teamTwoName.Name = "teamTwoName";
-            this.teamTwoName.Size = new System.Drawing.Size(203, 45);
+            this.teamTwoName.Size = new System.Drawing.Size(202, 45);
             this.teamTwoName.TabIndex = 9;
-            this.teamTwoName.Text = "<team one>";
+            this.teamTwoName.Text = "<team two>";
             // 
             // TournamentViewerForm
             // 
@@ -172,7 +172,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(862, 599);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.teamTwoScoreText);
             this.Controls.Add(this.teamTwoScoreLabel);
             this.Controls.Add(this.teamTwoName);
             this.Controls.Add(this.teamOneScoreValue);
@@ -205,7 +205,7 @@
         private Label teamOneName;
         private Label teamOneScoreLabel;
         private TextBox teamOneScoreValue;
-        private TextBox textBox1;
+        private TextBox teamTwoScoreText;
         private Label teamTwoScoreLabel;
         private Label teamTwoName;
     }
